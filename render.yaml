@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: odoo
+    env: docker
+    plan: free
+    disk:
+      name: odoo-data
+      mountPath: /var/lib/odoo
+      sizeGB: 1
